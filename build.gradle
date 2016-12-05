@@ -4,6 +4,20 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'war'
 
+buildscript {
+    repositories {
+        maven {
+            url "http://maven.aliyun.com/nexus/content/groups/public/"
+        }
+    }
+    dependencies {
+        classpath(
+                'org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE'
+//                'org.unbroken-dome.gradle-plugins:gradle-testsets-plugin:1.0.2'
+        )
+    }
+}
+
 sourceCompatibility = 1.5
 
 repositories {
@@ -15,4 +29,33 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile(
+            /**
+             * springboot
+             */
+            'org.springframework.boot:spring-boot-starter:1.4.1.RELEASE',
+            'org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE',
+            'org.springframework.boot:spring-boot-starter-aop:1.4.1.RELEASE',
+            'org.springframework.boot:spring-boot-starter-logging:1.4.1.RELEASE',
+            'org.springframework.boot:spring-boot-devtools:1.4.1.RELEASE',
+            'org.springframework.boot:spring-boot-starter-test:1.4.1.RELEASE',
+            'org.springframework.boot:spring-boot-starter-redis:1.4.1.RELEASE',
+//            'org.springframework.boot:spring-boot-starter-log4j2:1.4.1.RELEASE',
+            'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1',
+            /**
+             * 数据源
+             */
+            'org.springframework:spring-jdbc:4.3.3.RELEASE',
+            'mysql:mysql-connector-java:6.0.5',
+            'com.alibaba:druid:1.0.11',
+            /**
+             * swagger
+             */
+            'io.springfox:springfox-swagger2:2.6.0',
+            'io.springfox:springfox-swagger-ui:2.6.0',
+            /***
+             * tools
+             */
+            'org.projectlombok:lombok:1.16.10'
+    )
 }
