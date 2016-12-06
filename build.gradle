@@ -18,7 +18,7 @@ buildscript {
     }
 }
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
 
 repositories {
 //    mavenCentral()
@@ -46,7 +46,8 @@ dependencies {
              * 数据源
              */
             'org.springframework:spring-jdbc:4.3.3.RELEASE',
-            'mysql:mysql-connector-java:6.0.5',
+//            'mysql:mysql-connector-java:6.0.5',
+            'com.hynnet:oracle-driver-ojdbc:12.1.0.2',
             'com.alibaba:druid:1.0.11',
             /**
              * swagger
@@ -56,6 +57,8 @@ dependencies {
             /***
              * tools
              */
-            'org.projectlombok:lombok:1.16.10'
+            'org.projectlombok:lombok:1.16.10',
+            'com.alibaba:fastjson:1.2.20',
+            'com.github.pagehelper:pagehelper:4.1.6'
     )
 }

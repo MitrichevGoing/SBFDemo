@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hynnet:oracle-driver-ojdbc:12.1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hynnet/oracle-driver-ojdbc/12.1.0.2/cc8f3b482608b88f75b120ebf85b28f7b1e247f4/oracle-driver-ojdbc-12.1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hynnet/oracle-driver-ojdbc/12.1.0.2/6a4c4754195a7fd817fa6b4c46a4527d94a769de/oracle-driver-ojdbc-12.1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

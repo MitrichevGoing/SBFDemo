@@ -1,7 +1,15 @@
 spring:
   ##数据源
   datasource:
-    url : jdbc:mysql://localhost:3306/mitri?useUnicode=true&characterEncoding=UTF-8
-    username : root
-    password : root
-    driverClassName : com.mysql.jdbc.Driver
+    ##mysql
+#    url : jdbc:mysql://localhost:3306/mitri?useUnicode=true&characterEncoding=UTF-8
+#    username : root
+#    password : root
+#    driverClassName : com.mysql.jdbc.Driver
+    url : jdbc:oracle:thin:@180.97.80.177:1621:traveldb
+    username : jike
+    password : jike17712613261
+    driverClassName : oracle.jdbc.OracleDriver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
